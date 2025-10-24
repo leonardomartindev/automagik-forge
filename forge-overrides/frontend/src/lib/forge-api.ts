@@ -5,10 +5,10 @@ import type { ApiResponse } from 'shared/types';
  * Custom error class for Forge API failures.
  * Extends the native Error class with API-specific details.
  *
- * @param {string} message - A mensagem de erro
- * @param {number} statusCode - O código de status HTTP
- * @param {Response} response - O objeto Response original do fetch
- * @param {E} error_data - O payload de dados do erro
+ * @param {string} message - The error message
+ * @param {number} statusCode - The HTTP status code
+ * @param {Response} response - The original fetch Response object
+ * @param {E} error_data - The error data payload
  * @example
  * throw new ApiError('Request failed', 500, response, error_data);
  */
@@ -147,7 +147,7 @@ export const forgeApi = {
    *   omni_enabled: true,
    *   omni_config: {
    *     enabled: true,
-   *     host: 'https://evolution-api.example.com',
+   *     host: 'https://omni-api-instance',
    *     api_key: 'evo_1234567890abcdef',
    *     instance: 'automagik-forge',
    *     recipient: '+15551234567',
